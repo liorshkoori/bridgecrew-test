@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../sign-up-style.css" />
+<link rel="stylesheet" href="../style.css" />
+<script src="../scripts/storage.js" defer></script>
+<script src="../scripts/signUp.js" defer></script>
+  <head>
+    <div>
+      <h1 class="logo">Win<g class="g">g</g>man</h1>
+    </div>
+  </head>
+  <body>  
+    <form action="login.html" style="border:1px solid #ccc">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="name"><b>Name</b></label><br>
+        <input type="text" placeholder="Enter Your Name" name="name" id="name" required>
+        <br>
+        <label for="email"><b>Email</b></label><br>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <br>
+        <label for="psw"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <br>
+        <label for="psw-repeat"><b>Repeat Password</b></label><br>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <br>
+        <label for="description"><b>Description</b></label><br>
+        <input type="text" placeholder="Write a Description" name="description" id="description">
+        <br>
+        <label for="gender"><b>Gender:</b></label>
+        <select id="gender-select">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <br>
+      
+        <!-- <label id="remember">
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          <span class="checkmark"></span>
+        </label> -->
+        <br>
+        <br>
+        <p>By creating an account you agree to our <a href="#" style="color:#FF4F58FF">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+          <br>
+          <!-- <button id="cancel-btn" type="button" class="cancelbtn">Cancel</button> -->
+          <button id ="sign-up-btn" type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCV5NPyBXXgmCVW-TgCd6Yuw6iJQAqDOMw",
+    authDomain: "wingman-88eff.firebaseapp.com",
+    databaseURL: "https://wingman-88eff.firebaseio.com",
+    projectId: "wingman-88eff",
+    storageBucket: "wingman-88eff.appspot.com",
+    messagingSenderId: "881143937740",
+    appId: "1:881143937740:web:fb29f538217f0e48626069",
+    measurementId: "G-2SX10QGZYC"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+</script>
+
+
+
+</body>
+
+  </body>
+</html>
